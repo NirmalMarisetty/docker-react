@@ -3,9 +3,9 @@ services:
   - docker
 
 before_install:
-  - docker build -t NirmalMarisetty/docker-react -f Dockerfile.dev .
+  - docker build -t nirmal/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run NirmalMarisetty/docker-react npm run test -- --coverage
-  
+  - docker run nirmal/docker-react npm run test -- --coverage
+
 
